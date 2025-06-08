@@ -9,15 +9,19 @@ def main():
     clock = pygame.time.Clock()
     
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-    
-    gameRunning = True;
 
-    while gameRunning:
+    clock = pygame.time.Clock()
+    
+    game_running = True
+
+    while game_running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 return
         screen.fill((0 , 0, 0))
+
         pygame.display.flip()
+        delta_time = clock.tick(60) / 1000
 
 
 if __name__ == "__main__":
