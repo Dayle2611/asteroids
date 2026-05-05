@@ -1,6 +1,9 @@
 import pygame
+
 from constants import *
+
 # from logger import log_state
+
 
 def main():
     pygame.init()
