@@ -1,2 +1,0 @@
-# asteroids
-building javafx asteroids
